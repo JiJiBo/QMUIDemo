@@ -74,6 +74,9 @@ class DetailActivity : AppCompatActivity() {
             POPUP_FLAG -> {
                 frgamnet = PopUpFragment()
             }
+            FIX_TEXTVIEW_FLAG -> {
+                frgamnet = QMUISpanTouchFixTextViewFragment()
+            }
         }
         val mannager = supportFragmentManager
         val tronsaction = mannager.beginTransaction()
@@ -105,6 +108,7 @@ class DetailActivity : AppCompatActivity() {
         val TEXTVIEW_FLAG: Int = 1400
         val REFRESH_FLAG: Int = 1500
         val POPUP_FLAG: Int = 1600
+        val FIX_TEXTVIEW_FLAG: Int = 1700
         val FLAG_KEY: String = "FLAG_KEY"
         fun actionStart(mc: Context, flag: Int) {
             val intent = Intent(mc, DetailActivity::class.java)

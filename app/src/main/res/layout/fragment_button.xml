@@ -22,7 +22,8 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
-        app:qmui_borderWidth="2dp"
+        android:text="大按钮"
         app:qmui_borderColor="@color/colorPrimary"
-        android:text="大按钮" />
+        app:qmui_borderWidth="2dp" />
+
 </LinearLayout>

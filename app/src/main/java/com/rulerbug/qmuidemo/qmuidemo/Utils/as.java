@@ -1,6 +1,7 @@
 package com.rulerbug.qmuidemo.qmuidemo.Utils;
 
 import android.content.DialogInterface;
+import android.text.SpannableString;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Toast;
@@ -14,6 +15,14 @@ import com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView;
 public class as {
     public static void main(String[] args) {
 //        show();
+        String heightText = "@ruler";
+        String heightText2 = "#bug#";
+        SpannableString spannableString = new SpannableString("");
+        int start = 0;
+        int end;
+        int index;
+        while ((index = "".indexOf(heightText, start)) > -1) {
+        }
     }
 //
 //    private static void show() {

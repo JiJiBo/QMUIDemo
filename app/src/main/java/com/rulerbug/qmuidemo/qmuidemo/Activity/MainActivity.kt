@@ -67,14 +67,17 @@ class MainActivity : AppCompatActivity() {
                     12 -> {
                         flag = DetailActivity.RADIUS_IMMAGEVIEW_FLAG
                     }
-                    13-> {
+                    13 -> {
                         flag = DetailActivity.TEXTVIEW_FLAG
                     }
-                    14-> {
+                    14 -> {
                         flag = DetailActivity.REFRESH_FLAG
                     }
-                    15-> {
+                    15 -> {
                         flag = DetailActivity.POPUP_FLAG
+                    }
+                    16 -> {
+                        flag = DetailActivity.FIX_TEXTVIEW_FLAG
                     }
                 }
                 DetailActivity.actionStart(this@MainActivity, flag)
@@ -93,7 +96,7 @@ class MainActivity : AppCompatActivity() {
     private fun initData() {
 
         datas = arrayOf("按钮", "indicator", "有输入框的对话框", "对话框", "通知", "地图", "FLOAT_LAYOUT", "进度条", "sheet", "groupListview",
-                "消息提示", "emptyView", "RadiusImageView","textview","refreshView","popup")
+                "消息提示", "emptyView", "RadiusImageView", "textview", "refreshView", "popup", "fixTextView")
     }
 
     var lv: ListView? = null
