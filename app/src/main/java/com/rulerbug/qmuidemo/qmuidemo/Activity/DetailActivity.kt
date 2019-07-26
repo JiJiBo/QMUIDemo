@@ -71,6 +71,9 @@ class DetailActivity : AppCompatActivity() {
             REFRESH_FLAG -> {
                 frgamnet = RefreshViewFragment()
             }
+            POPUP_FLAG -> {
+                frgamnet = PopUpFragment()
+            }
         }
         val mannager = supportFragmentManager
         val tronsaction = mannager.beginTransaction()
@@ -101,6 +104,7 @@ class DetailActivity : AppCompatActivity() {
         val RADIUS_IMMAGEVIEW_FLAG: Int = 1300
         val TEXTVIEW_FLAG: Int = 1400
         val REFRESH_FLAG: Int = 1500
+        val POPUP_FLAG: Int = 1600
         val FLAG_KEY: String = "FLAG_KEY"
         fun actionStart(mc: Context, flag: Int) {
             val intent = Intent(mc, DetailActivity::class.java)

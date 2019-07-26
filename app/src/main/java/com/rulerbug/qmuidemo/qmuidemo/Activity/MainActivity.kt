@@ -73,6 +73,9 @@ class MainActivity : AppCompatActivity() {
                     14-> {
                         flag = DetailActivity.REFRESH_FLAG
                     }
+                    15-> {
+                        flag = DetailActivity.POPUP_FLAG
+                    }
                 }
                 DetailActivity.actionStart(this@MainActivity, flag)
             }
@@ -90,7 +93,7 @@ class MainActivity : AppCompatActivity() {
     private fun initData() {
 
         datas = arrayOf("按钮", "indicator", "有输入框的对话框", "对话框", "通知", "地图", "FLOAT_LAYOUT", "进度条", "sheet", "groupListview",
-                "消息提示", "emptyView", "RadiusImageView","textview","refreshView")
+                "消息提示", "emptyView", "RadiusImageView","textview","refreshView","popup")
     }
 
     var lv: ListView? = null
