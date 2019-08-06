@@ -44,7 +44,7 @@ class DiTuFragment : BaseFragment() {
                 dingwei()
             } else {
                 //没有权限，开始申请
-                requestPermissions(arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA), REQUEST_CODE)
+                requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_PHONE_STATE), REQUEST_CODE)
             }
         } else {
             dingwei()
